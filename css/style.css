@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: myFont;
+	src:url('../fonts/MindBlue_bold_italic_demo.otf');
+}
+.navBar > .content{
+	width: 970px;
+	height: 70px;
+	margin: auto;
+}
+.navBar .links{
+	float: right;
+	color: gainsboro;
+	font-family: myFont;
+	font-size: 100%;
+	margin-top: 25px;
+	-webkit-font-smoothing: antialiased;
+}
+.navBar .links li{
+	display: inline-block;
+	margin-left: 25px;
+}
+.navBar .links .active {
+	color: chartreuse;
+	font-weight: 500;
+}
+.navBar .links li:hover{
+	cursor: pointer;
+	color: #333333;
+}
+#imageOne{
+	background-image:url('../images/computer2.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:auto;
+	margin-bottom:10px;
+	height:	300px;
+	width:	inherit;
+}
+body{
+	background-color:#999;
+	margin:auto;
+}
+.aboutMe{
+	margin-left:10px;
+	margin-right:450px;
+
+}
+.aboutMe > p{
+	text-align:left;
+	font-family:myFont;
+	font-weight:100;
+	color:white;
+	font-size:100%;
+}
+html, body, div, span, h1, h2,  p, a,  ul, li, img {
+	margin: 0; padding: 0;
+	border: 0; outline: 0;
+	font-size: 100%;
+}
+ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+a {
+	text-decoration:none;
+}
+#wrap {
+  width: 1020px; 
+  margin: 0 auto;
+} 
+.work {
+  float:left; 
+  position:relative; 
+  display:inline-block; 
+  width:300px; 
+  height:300px;
+  margin:10px; 
+  padding:10px; 
+  background:#fff; 
+  box-shadow:0 0 5px rgba(0,0,0,.35);
+}
+.work div {
+  position:absolute;
+  height:300; 
+  width:300px;
+  background:rgba(0,0,0,.45); 
+  overflow:hidden;
+  bottom:10px; 
+  left:10px;
+  padding: 0 10px;
+  line-height:50px;
+  color:#fff;
+  transition:height 1s;
+}
+.work:hover div {
+  height:50px;
+}
+canvas {
+  opacity:1; 
+  position:absolute; 
+  top:10px;
+  left:10px;
+  transition:opacity 1s .2s;
+}
+li:hover canvas {
+  opacity:0;
+}
