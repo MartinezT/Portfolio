@@ -109,3 +109,22 @@ canvas {
 li:hover canvas {
   opacity:0;
 }
+.social {
+	margin-top: 700px;
+    padding-bottom: 9.375rem;
+    text-align: center;
+	font-size: -webkit-xxx-large;
+}
+.social .icons > li {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem 2px;
+	border: .5px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+	font-size: -webkit-xxx-large;
+}
+.social .icons > li:hover {
+	cursor: pointer;
+}
